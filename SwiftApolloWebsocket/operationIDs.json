@@ -1,0 +1,6 @@
+{
+  "491301ecc2355f5e34bcf788c6c9a65f72e3d436353db31a5ca417869ff11ed4": {
+    "name": "FakeUsers",
+    "source": "query FakeUsers {\n  users {\n    __typename\n    data {\n      __typename\n      name\n    }\n  }\n}"
+  }
+}

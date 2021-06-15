@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,11 @@
 		A55154FC2679026400221662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55154FB2679026400221662 /* ContentView.swift */; };
 		A55154FE2679026400221662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55154FD2679026400221662 /* Assets.xcassets */; };
 		A55155012679026400221662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55155002679026400221662 /* Preview Assets.xcassets */; };
+		A551550A267902F600221662 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = A5515509267902F600221662 /* Apollo */; };
+		A551550C2679030100221662 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551550B2679030100221662 /* Network.swift */; };
+		A551550E267903B300221662 /* API.graphql in Resources */ = {isa = PBXBuildFile; fileRef = A551550D267903B300221662 /* API.graphql */; };
+		A5515510267904CA00221662 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551550F267904C900221662 /* API.swift */; };
+		A55155122679060100221662 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A55155112679060100221662 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,10 @@
 		A55154FD2679026400221662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55155002679026400221662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A55155022679026400221662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A551550B2679030100221662 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A551550D267903B300221662 /* API.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = API.graphql; sourceTree = "<group>"; };
+		A551550F267904C900221662 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A55155112679060100221662 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A551550A267902F600221662 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +46,7 @@
 		A55154ED2679026400221662 = {
 			isa = PBXGroup;
 			children = (
+				A55155112679060100221662 /* .gitignore */,
 				A55154F82679026400221662 /* SwiftApolloWebsocket */,
 				A55154F72679026400221662 /* Products */,
 			);
@@ -52,11 +63,14 @@
 		A55154F82679026400221662 /* SwiftApolloWebsocket */ = {
 			isa = PBXGroup;
 			children = (
+				A551550F267904C900221662 /* API.swift */,
+				A551550D267903B300221662 /* API.graphql */,
 				A55154F92679026400221662 /* SwiftApolloWebsocketApp.swift */,
 				A55154FB2679026400221662 /* ContentView.swift */,
 				A55154FD2679026400221662 /* Assets.xcassets */,
 				A55155022679026400221662 /* Info.plist */,
 				A55154FF2679026400221662 /* Preview Content */,
+				A551550B2679030100221662 /* Network.swift */,
 			);
 			path = SwiftApolloWebsocket;
 			sourceTree = "<group>";
@@ -85,6 +99,9 @@
 			dependencies = (
 			);
 			name = SwiftApolloWebsocket;
+			packageProductDependencies = (
+				A5515509267902F600221662 /* Apollo */,
+			);
 			productName = SwiftApolloWebsocket;
 			productReference = A55154F62679026400221662 /* SwiftApolloWebsocket.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +129,9 @@
 				Base,
 			);
 			mainGroup = A55154ED2679026400221662;
+			packageReferences = (
+				A5515508267902F600221662 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = A55154F72679026400221662 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55155122679060100221662 /* .gitignore in Resources */,
 				A55155012679026400221662 /* Preview Assets.xcassets in Resources */,
+				A551550E267903B300221662 /* API.graphql in Resources */,
 				A55154FE2679026400221662 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +162,8 @@
 			files = (
 				A55154FC2679026400221662 /* ContentView.swift in Sources */,
 				A55154FA2679026400221662 /* SwiftApolloWebsocketApp.swift in Sources */,
+				A5515510267904CA00221662 /* API.swift in Sources */,
+				A551550C2679030100221662 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5515508267902F600221662 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.43.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5515509267902F600221662 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5515508267902F600221662 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A55154EE2679026400221662 /* Project object */;
 }

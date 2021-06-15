@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button {
+            Network.shared.apollo.fetch(query: FakeUsersQuery()) { _ in
+                print("fetched users")
+            }
+        } label: {
+            Text("Fetch users")
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.blue)
+        }
     }
 }
 

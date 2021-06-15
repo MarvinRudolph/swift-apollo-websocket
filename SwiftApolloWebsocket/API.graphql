@@ -1,0 +1,3 @@
+query FakeUsers {
+    users { data { name }  }
+}
